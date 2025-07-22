@@ -1,0 +1,123 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2025-07-09T16:04:57.767Z",
+    "end": "2025-07-09T16:04:58.289Z",
+    "duration": 522,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "2cb6e70f-0549-4547-ad95-a8126c8933b2",
+      "title": "",
+      "fullFile": "/home/guest/Desktop/projetos/banco-api-tests/test/login.test.js",
+      "file": "/test/login.test.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a077d844-7af3-45a5-9df2-49685c08ba51",
+          "title": "Login",
+          "fullFile": "/home/guest/Desktop/projetos/banco-api-tests/test/login.test.js",
+          "file": "/test/login.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "d7104898-8877-4286-b6ba-97e3148175d9",
+              "title": "POST/login",
+              "fullFile": "/home/guest/Desktop/projetos/banco-api-tests/test/login.test.js",
+              "file": "/test/login.test.js",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Deve retornar 200 com o token em string quando usar credenciais validas",
+                  "fullTitle": "Login POST/login Deve retornar 200 com o token em string quando usar credenciais validas",
+                  "timedOut": false,
+                  "duration": 519,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "const resposta = await request('http://localhost:3000')\n    .post('/login')\n    .set('Content-Type', 'application/json')\n    .send({\n        'username': 'julio.lima',\n        'senha': '123456'\n    })\n                        \nexpect(resposta.status).to.equal('200'); \nexpect(resposta.body.token).to.be.a('string');",
+                  "err": {
+                    "message": "AssertionError: expected 500 to equal '200'",
+                    "estack": "AssertionError: expected 500 to equal '200'\n    at Context.<anonymous> (test/login.test.js:16:44)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)",
+                    "diff": null
+                  },
+                  "uuid": "ccfd79ac-6bc2-4281-9902-3e46b48aa595",
+                  "parentUUID": "d7104898-8877-4286-b6ba-97e3148175d9",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [],
+              "failures": [
+                "ccfd79ac-6bc2-4281-9902-3e46b48aa595"
+              ],
+              "pending": [],
+              "skipped": [],
+              "duration": 519,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 200000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 200000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 200000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "11.7.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
