@@ -3,7 +3,7 @@
 ## Objetivo  
 Este projeto realiza  testes automatizados na API REST , validando suas funcionalidades e contribuindo a qualidade de suas operações.
 
-## 🧰 Stack Utiçlizada  
+## 🧰 Stacks Utilizadas  
 - **JavaScript** (Node.js)  
 - **Mocha** – framework de testes  
 - **SuperTest** – para enviar requisições HTTP  
