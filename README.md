@@ -17,7 +17,7 @@ Este projeto realiza  testes automatizados na API REST , validando suas funciona
 banco-api-tests/
 ├── tests/                    #Testes organizados por funcionalidades
 │   ├── login.test.js
-│   ├── transacoes.test.js
+│   ├── transferencias.test.js
 ├── mochawesome-report/       ← relatórios HTML gerados pelo mochawesome
 ├── .env                               #Diretorio gerado automaticamente com o relatorio HTML  
 ├── .gitgnore
